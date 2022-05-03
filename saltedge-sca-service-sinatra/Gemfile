@@ -18,8 +18,8 @@
 # under Section 7 of the GNU General Public License see THIRD_PARTY_NOTICES.md
 
 source 'https://rubygems.org'
-gem 'sinatra'               # Sinatra is a DSL for quickly creating web applications in Ruby with minimal effort.
-gem 'sinatra-contrib'       # Collection of useful Sinatra extensions
+gem 'sinatra'               , '>= 2.2.0' # Sinatra is a DSL for quickly creating web applications in Ruby with minimal effort.
+gem 'sinatra-contrib'       , '>= 2.2.0' # Collection of useful Sinatra extensions
 
 # other dependencies
 gem 'rake'                 # Rake is a Make-like program implemented in Ruby
