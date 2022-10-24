@@ -37,7 +37,7 @@ group :development do
 end
 
 group :test do
-  gem 'rack-test'           # Rack::Test is a layer on top of Rack's MockRequest
+  gem 'rack-test'           , '>= 2.0.0' # Rack::Test is a layer on top of Rack's MockRequest
   gem 'rspec'               # BDD for Ruby
   gem 'database_cleaner'    # Strategies for cleaning databases. Can be used to ensure a clean state for testing.
   gem 'capybara'            # Feature tests
