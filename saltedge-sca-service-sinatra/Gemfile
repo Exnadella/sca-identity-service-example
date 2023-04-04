@@ -18,8 +18,8 @@
 # under Section 7 of the GNU General Public License see THIRD_PARTY_NOTICES.md
 
 source 'https://rubygems.org'
-gem 'sinatra'               # Sinatra is a DSL for quickly creating web applications in Ruby with minimal effort.
-gem 'sinatra-contrib'       # Collection of useful Sinatra extensions
+gem 'sinatra'               , '>= 2.2.3' # Sinatra is a DSL for quickly creating web applications in Ruby with minimal effort.
+gem 'sinatra-contrib'       , '>= 2.2.3' # Collection of useful Sinatra extensions
 
 # other dependencies
 gem 'rake'                 # Rake is a Make-like program implemented in Ruby
@@ -27,7 +27,7 @@ gem 'sinatra-activerecord' # ActiveRecord implementation
 gem 'sqlite3'              # SQLite DB
 gem 'json'                 # JSON implementation
 gem 'rqrcode'              # QR code generator
-gem 'activerecord'
+gem 'activerecord', '>= 6.1.7.3'
 gem 'rest-client'
 gem 'pry'
 
@@ -37,7 +37,7 @@ group :development do
 end
 
 group :test do
-  gem 'rack-test'           # Rack::Test is a layer on top of Rack's MockRequest
+  gem 'rack-test'           , '>= 2.0.0' # Rack::Test is a layer on top of Rack's MockRequest
   gem 'rspec'               # BDD for Ruby
   gem 'database_cleaner'    # Strategies for cleaning databases. Can be used to ensure a clean state for testing.
   gem 'capybara'            # Feature tests
