@@ -23,11 +23,11 @@ gem 'sinatra-contrib'       # Collection of useful Sinatra extensions
 
 # other dependencies
 gem 'rake'                 # Rake is a Make-like program implemented in Ruby
-gem 'sinatra-activerecord' # ActiveRecord implementation
+gem 'sinatra-activerecord' , '>= 2.0.19' # ActiveRecord implementation
 gem 'sqlite3'              # SQLite DB
 gem 'json'                 # JSON implementation
 gem 'rqrcode'              # QR code generator
-gem 'activerecord'
+gem 'activerecord', '>= 6.1.7.5'
 gem 'rest-client'
 gem 'pry'
 
@@ -42,5 +42,5 @@ group :test do
   gem 'database_cleaner'    # Strategies for cleaning databases. Can be used to ensure a clean state for testing.
   gem 'capybara'            # Feature tests
   gem 'rack_session_access' # Middleware that supports a user in managing sessions independently
-  gem 'factory_bot'
+  gem 'factory_bot', '>= 6.2.0'
 end
