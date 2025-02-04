@@ -42,5 +42,5 @@ group :test do
   gem 'database_cleaner'    # Strategies for cleaning databases. Can be used to ensure a clean state for testing.
   gem 'capybara'            # Feature tests
   gem 'rack_session_access' # Middleware that supports a user in managing sessions independently
-  gem 'factory_bot'
+  gem 'factory_bot', '>= 6.5.1'
 end
